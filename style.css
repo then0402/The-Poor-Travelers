@@ -1,0 +1,179 @@
+body	{margin: 0 auto;
+		 padding: 0;
+		 background: #cffff6}
+		 
+h1		{text-align:center;
+		 margin-top: 25px;
+		 margin-bottom:auto;
+		 font-family:tahoma;
+		 color:blue;
+		 font-style:italic;
+		 font-size: xxx-large;}
+		 
+h2,h3	{text-align:center}
+
+figcaption		{text-align:center;
+				 font-family:papyrus;
+				 font-weight:bold;
+				 color:#82664f;
+				 font-style:italic}
+
+ul		{list-style-type:square}
+
+ol		{list-style-type:lower-roman}
+
+hr		{width:90%;
+		 height:5px;
+		 background-color:red}
+
+footer	{text-align:center;
+		 font-style:italic}
+		 
+.container 		{margin:0 auto;
+				 width:1050px}
+		 
+.boxed {width:400px;
+		height:200px;
+		left:50%;
+		margin-left:450px;
+		background-color:white;
+		text-align:center}
+		
+.logo	{text-indent:-9999999px;
+		 background:url(gallery/main/umslogo.png);
+		 margin: auto;
+		 margin-top: 25px;
+		 width: 285px;
+		 height: 93px}
+		 
+.topnav {overflow: hidden;
+		 background-color: #333;
+		 font-family: Arial}
+
+.topnav a 	{float: left;
+			 font-size: 17px;
+			 color: #f2f2f2;
+			 text-align: center;
+			 padding: 14px 16px;
+			 text-decoration: none}
+
+.dest 	{float: left;
+		 overflow: hidden}
+
+.dest, .destbtn 	{font-size: 17px;
+					 border: none;
+					 outline: none;
+					 color: #f2f2f2;
+					 padding: 7px 16px;
+					 background-color: inherit}
+
+.topnav a:hover, .dest:hover .destbtn 	{background-color: #ddd;
+										 color: black}
+
+.places 	{display: none;
+			 position: absolute;
+			 background-color: #f9f9f9;
+			 min-width: 160px;
+			 box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			 z-index: 1}
+
+.places a 	{float: none;
+			 color: black;
+			 padding: 12px 16px;
+			 text-decoration: none;
+			 display: block;
+			 text-align: left}
+
+.places a:hover 	{background-color: #ddd}
+
+.dest:hover .places {display: block}		 
+
+.slider		{width: 800px;
+			 height: 500px;
+			 margin-left:200px;
+			 border-radius: 10px;
+			 overflow: hidden}
+
+.slides		{width: 500%;
+			 height: 500px;
+			 display: flex}
+
+.slides input{display: none}
+
+.slide		{width: 20%;
+			 transition: 2s}
+
+.slide img	{width: 800px;
+			 height: 500px}
+
+.navigation-manual	{position: absolute;
+					 width: 800px;
+					 margin-top: -40px;
+					 display: flex;
+					 justify-content: center}
+
+.manual-btn		{border: 2px solid #40D3DC;
+				 padding:5px;
+				 border-radius: 10px;
+				 cursor: pointer;
+				 transition: 1s}
+
+.manual-btn:not(:last-child)	{margin-right: 40px}
+
+.manual-btn:hover	{background: #40D3DC}
+
+#radio1:checked ~ .first	{margin-left: 0}
+
+#radio2:checked ~ .first	{margin-left: -20%}
+
+#radio3:checked ~ .first	{margin-left: -40%}
+
+#radio4:checked ~ .first	{margin-left: -60%}
+
+#radio5:checked ~ .first	{margin-left: -80%}
+
+.navigation-auto	{position: absolute;
+					 display: flex;
+					 width: 800px;
+					 justify-content: center;
+					 margin-top: 460px}
+
+.navigation-auto div	{border: 2px solid #40D3DC;
+						 padding: 5px;
+						 border-radius: 10px;
+						 transition: 1s}
+
+.navigation-auto div:not(:last-child)	{margin-right: 40px}
+
+#radio1:checked ~ .navigation-auto .auto-btn1	{background: #40D3DC}
+
+#radio2:checked ~ .navigation-auto .auto-btn2	{background: #40D3DC}
+
+#radio3:checked ~ .navigation-auto .auto-btn3	{background: #40D3DC}
+
+#radio4:checked ~ .navigation-auto .auto-btn4	{background: #40D3DC}
+
+#radio5:checked ~ .navigation-auto .auto-btn5	{background: #40D3DC}
+
+.intro		{display: flex}
+
+.intro img 	{margin-right: 10px;
+			 display: block}
+
+.intro h4,
+.intro p 	{margin: 0}
+
+.boxed2 {width:1000px;
+		height:192px;
+		left:50%;
+		background-color:white}
+		
+.boxed2 img		{width: 192px;
+				 height:192px}
+		
+.insert img		{width:500px;
+				 height:240px;
+				 margin-left:250px}		
+		
+.pic img	{width: 250px;
+			 height:120px}

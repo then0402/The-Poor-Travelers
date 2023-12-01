@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Homepage</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<h1 class="logo">logo here</h1>
+		<h1>Welcome to The Poor Traveller Website</h1>
+		
+		<div class="topnav">
+			<a href="index.html">Homepage</a>
+			<div class="dest">
+				<button class="destbtn">Destinations
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="places">
+					<a href="place1.html">Waterfront</a>
+					<a href="place2.html">Niah National Park</a>
+					<a href="place3.html">Borneo Tropical Rainforest Resort</a>
+					<a href="place4.html">Sarawak Cultural Village</a>
+					<a href="place5.html">Tanjung Batu Beach</a>
+				</div>
+			</div>
+			<a href="food.html">Local Foods</a>
+			<a href="about.html">About Us</a>
+			<a href="contact.html">Contact Us</a>
+			<a href="gallery.html">Gallery</a>
+		</div>
+		
+		<br>
+		
+		<div class="slider">
+			<div class="slides">
+				<input type="radio" name="radio-btn" id="radio1">
+				<input type="radio" name="radio-btn" id="radio2">
+				<input type="radio" name="radio-btn" id="radio3">
+				<input type="radio" name="radio-btn" id="radio4">
+				<input type="radio" name="radio-btn" id="radio5">
+			
+				<div class="slide first">
+					<a href="place1.html"><img src="gallery/waterfront/waterfront_main.jpg" alt=""></a>
+				</div>
+        
+				<div class="slide">
+					<a href="place2.html"><img src="gallery/NiahNationalPark/niah_main.jpg" alt=""></a>
+				</div>
+        
+				<div class="slide">
+					<a href="place3.html"><img src="gallery/BorneoTropicalRainforestResort/a.jpg" alt=""></a>
+				</div>
+        
+				<div class="slide">
+					<a href="place4.html"><img src="gallery/SCV/SCV_main.jpg" alt=""></a>
+				</div>
+				
+				<div class="slide">
+					<a href="place5.html"><img src="gallery/TanjungBatuBeach/tbmain.jpg" alt=""></a>
+				</div>
+      
+				<div class="navigation-auto">
+					<div class="auto-btn1"></div>
+					<div class="auto-btn2"></div>
+					<div class="auto-btn3"></div>
+					<div class="auto-btn4"></div>
+					<div class="auto-btn5"></div>
+				</div>
+		</div>
+		
+				<div class="navigation-manual">
+					<label for="radio1" class="manual-btn"></label>
+					<label for="radio2" class="manual-btn"></label>
+					<label for="radio3" class="manual-btn"></label>
+					<label for="radio4" class="manual-btn"></label>
+					<label for="radio5" class="manual-btn"></label>
+				</div>
+		</div>
+
+		<script type="text/javascript">
+			var counter = 1;
+			setInterval(function(){
+			document.getElementById('radio' + counter).checked = true;
+			counter++;
+			if(counter > 5){counter = 1;}
+			}, 5000);
+		</script>
+		
+		<hr/>
+		<footer>&copy;2021 Copyright The Poor Traveller</footer>
+	</body>
+</html>
